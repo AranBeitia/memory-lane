@@ -1,5 +1,37 @@
-@import 'grid-layout.css';
+@import "grid-layout.css";
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-* {
-  color: red;
+.container {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 5rem;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    width: 70%;
+    box-shadow: 6px 6px 10px 0 darkgrey;
+}
+
+.aside-content {
+    background-color: white;
+    width: 25%;
+    border-radius: 5px;
+    box-shadow: 6px 6px 10px 0 darkgrey;
+}
+
+.form-elements {
+    display: flex;
+    flex-direction: column;
 }
