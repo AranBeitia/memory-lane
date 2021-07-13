@@ -1,37 +1,37 @@
 @import "grid-layout.css";
+@import "form.css";
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    background-color: lightgrey;
-    display: flex;
-    justify-content: space-between;
-    height: 100vh;
-    padding: 5rem;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-between;
+  height: calc(100vh - 10rem);
+  padding: 5rem;
 }
 
 .main-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 5px;
-    width: 70%;
-    box-shadow: 6px 6px 10px 0 darkgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  width: 70%;
+  box-shadow: 6px 6px 10px 0 darkgrey;
 }
 
 .aside-content {
-    background-color: white;
-    width: 25%;
-    border-radius: 5px;
-    box-shadow: 6px 6px 10px 0 darkgrey;
-}
-
-.form-elements {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  width: 25%;
+  border-radius: 5px;
+  box-shadow: 6px 6px 10px 0 darkgrey;
+  padding: 8rem 0;
 }
