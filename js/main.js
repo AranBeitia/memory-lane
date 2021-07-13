@@ -6,10 +6,10 @@
 /**
  * Global Vars
  */
-var userName = '';
-var mainContent = document.querySelector('.main-content');
+let userName = '';
+let mainContent = document.querySelector('.main-content');
 
-var formHTML = `<form id="user-form" class="form-elements">
+let formHTML = `<form id="user-form" class="form-elements">
 <h1 class="form-screen">Choose a user name</h1>
 <label for="name">Username</label>
 <input type="text" id="uname" name="name" maxlength="8" minlength="1" pattern="[a-zA-Z]{1,8}"/>
@@ -17,10 +17,8 @@ var formHTML = `<form id="user-form" class="form-elements">
 </form>
 `; 
 
+let galleryHTML = `<p>Im gallery</p>`; 
 
-function initGalleryGame() {
-    return `<p>Holaaa desde galería</p>`; 
-}
 
 function buildLayout(html) {
     mainContent.innerHTML = html;
@@ -31,15 +29,17 @@ function buildLayout(html) {
  * eventListeners
  */
  document.addEventListener("DOMContentLoaded", function() {
-     
-    var userForm = document.querySelector('#user-form');
+    // Init userForm
+    buildLayout(formHTML); 
+    
+    let userForm = document.querySelector('#user-form');
     userForm.addEventListener('submit', e => {
         e.preventDefault();
         userName = document.querySelector('#uname').value;
     
         if (/^[a-zA-Z]{1,8}$/.test(userName)) {
             // Game start
-            buildLayout(formHTML);
+            buildLayout(galleryHTML);
         } else {
             // Show error msg
             alert('¿Enserio te llamas así?');
