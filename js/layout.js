@@ -17,7 +17,7 @@ let formHTML = `
 
 let endHTML = `
   <section id="game-over" class="flex-center-column">
-    <h1 class="main-title">Congrats, you won!!! &#128126 &#128175</h1>
+    <h1 class="main-title">Congrats, you won!!! &#128126; &#128175;</h1>
     <p class="padding-2">You won in <span class="text-highlight">15 seconds</span></p>
     <button class="button">Play again</button>
   </section>
