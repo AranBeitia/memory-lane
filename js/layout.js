@@ -17,7 +17,7 @@ let formHTML = `
 
 let endHTML = `
   <section id="game-over" class="flex-center-column">
-    <h1 class="main-title">Congratulations, you won!!! &#128126 &#128175</h1>
+    <h1 class="main-title">Congrats, you won!!! &#128126 &#128175</h1>
     <p class="padding-2">You won in <span class="text-highlight">15 seconds</span></p>
     <button class="button">Play again</button>
   </section>
@@ -79,7 +79,7 @@ function galleryHTML() {
       </div>
     `;
   });
-  grid = `<section class="grid">${imagesTag}</section>`;
+  grid = `<section class="[ grid grid-4-to-4 ]">${imagesTag}</section>`;
   return grid;
 }
 
