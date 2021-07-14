@@ -1,4 +1,5 @@
 import { buildLayout, galleryHTML, formHTML } from './main.js'
+import { startGame } from './game.js'
 /**
  * eventListeners
  */
@@ -15,7 +16,8 @@ import { buildLayout, galleryHTML, formHTML } from './main.js'
   
       if (/^[a-zA-Z]{1,8}$/.test(userName)) {
           // Game start
-          buildLayout(galleryHTML);
+          buildLayout(galleryHTML());
+          startGame()
       } else {
           // Show error msg
           alert('¿Enserio te llamas así?');

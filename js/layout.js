@@ -74,31 +74,6 @@ function galleryHTML() {
   return grid;
 }
 
-
-
-
-
-let galleryHTML = `
-<section class="grid">
-  <img src="https://images.squarespace-cdn.com/content/v1/56a739dbb204d5c253feacd8/1455801509563-EN0CZLQAK6Z6NCIXOP09/img.jpg" alt="">
-  <img src="https://images.squarespace-cdn.com/content/v1/56a739dbb204d5c253feacd8/1455801509563-EN0CZLQAK6Z6NCIXOP09/img.jpg" alt="">
-  <img src="https://images.squarespace-cdn.com/content/v1/56a739dbb204d5c253feacd8/1455801509563-EN0CZLQAK6Z6NCIXOP09/img.jpg" alt="">
-  <img src="https://images.squarespace-cdn.com/content/v1/56a739dbb204d5c253feacd8/1455801509563-EN0CZLQAK6Z6NCIXOP09/img.jpg" alt="">
-  <img src="https://images.squarespace-cdn.com/content/v1/56a739dbb204d5c253feacd8/1455801509563-EN0CZLQAK6Z6NCIXOP09/img.jpg" alt="">
-  <img src="https://images.squarespace-cdn.com/content/v1/56a739dbb204d5c253feacd8/1455801509563-EN0CZLQAK6Z6NCIXOP09/img.jpg" alt="">
-  <img src="https://images.squarespace-cdn.com/content/v1/56a739dbb204d5c253feacd8/1455801509563-EN0CZLQAK6Z6NCIXOP09/img.jpg" alt="">
-  <img src="https://images.squarespace-cdn.com/content/v1/56a739dbb204d5c253feacd8/1455801509563-EN0CZLQAK6Z6NCIXOP09/img.jpg" alt="">
-  <img src="https://images.squarespace-cdn.com/content/v1/56a739dbb204d5c253feacd8/1455801509563-EN0CZLQAK6Z6NCIXOP09/img.jpg" alt="">
-  <img src="https://images.squarespace-cdn.com/content/v1/56a739dbb204d5c253feacd8/1455801509563-EN0CZLQAK6Z6NCIXOP09/img.jpg" alt="">
-  <img src="https://images.squarespace-cdn.com/content/v1/56a739dbb204d5c253feacd8/1455801509563-EN0CZLQAK6Z6NCIXOP09/img.jpg" alt="">
-  <img src="https://images.squarespace-cdn.com/content/v1/56a739dbb204d5c253feacd8/1455801509563-EN0CZLQAK6Z6NCIXOP09/img.jpg" alt="">
-  <img src="https://images.squarespace-cdn.com/content/v1/56a739dbb204d5c253feacd8/1455801509563-EN0CZLQAK6Z6NCIXOP09/img.jpg" alt="">
-  <img src="https://images.squarespace-cdn.com/content/v1/56a739dbb204d5c253feacd8/1455801509563-EN0CZLQAK6Z6NCIXOP09/img.jpg" alt="">
-  <img src="https://images.squarespace-cdn.com/content/v1/56a739dbb204d5c253feacd8/1455801509563-EN0CZLQAK6Z6NCIXOP09/img.jpg" alt="">
-  <img src="https://images.squarespace-cdn.com/content/v1/56a739dbb204d5c253feacd8/1455801509563-EN0CZLQAK6Z6NCIXOP09/img.jpg" alt="">
-</section>
-`;
-
 export {
   buildLayout,
   formHTML,
