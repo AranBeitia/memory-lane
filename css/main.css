@@ -5,13 +5,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: lightgrey;
 }
 
 .container {
-  background-color: lightgrey;
   display: flex;
   justify-content: space-between;
   padding: 5rem;
+  align-items: end;
 }
 @media all and (max-width: 670px ) {
   .container {
@@ -38,5 +39,4 @@ body {
   width: 25%;
   border-radius: 5px;
   box-shadow: 6px 6px 10px 0 darkgrey;
-  padding: 8rem 0;
 }
