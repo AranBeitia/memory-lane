@@ -7,10 +7,10 @@
 }
 .grid-img {
   width: 100%;
+  max-width: 100%;
   border-radius: 5px;
   box-shadow: 1px 5px 7.5px 0 darkgrey;
   height: auto;
-  max-width: 100px;
 }
 
 /* To show the image */
