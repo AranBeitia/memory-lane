@@ -1,0 +1,27 @@
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card-background {
+  padding: .7rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 6px 6px 10px 0 darkgrey;
+}
+
+.padding-2 {
+  padding: 2rem;
+}
+
+.padding-l1 {
+  padding-left: 1rem;
+}

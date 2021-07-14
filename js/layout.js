@@ -5,14 +5,23 @@ function buildLayout(html) {
 }
 
 let formHTML = `
-<form id="user-form" class="form-elements">
-  <h1 class="form-screen">Choose a user name</h1>
-  <label for="name">Username</label>
-  <input type="text" id="uname" name="name" maxlength="8" minlength="1" pattern="[a-zA-Z]{1,8}"/>
-  <input type="submit" value="Start" />
+<form id="user-form" class="flex-center-column">
+  <h1 class="main-title">Choose a nickname &#128125</h1>
+  <div class="flex-center padding-2">
+    <label for="name">Username</label>
+    <input type="text" id="uname" name="name" maxlength="8" minlength="1" pattern="[a-zA-Z]{1,8}" class="input-text" />
+  </div>
+  <input type="submit" value="Start" class="button" />
 </form>
 `;
 
+let endHTML = `
+  <section id="game-over" class="flex-center-column">
+    <h1 class="main-title">Congratulations, you won!!! &#128126 &#128175</h1>
+    <p class="padding-2">You won in <span class="text-highlight">15 seconds</span></p>
+    <button class="button">Play again</button>
+  </section>
+`
 let imgUrl = [
   {
     name: 'image-01',
@@ -77,5 +86,6 @@ function galleryHTML() {
 export {
   buildLayout,
   formHTML,
+  endHTML,
   galleryHTML
 }

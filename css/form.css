@@ -1,13 +1,3 @@
-.form-elements {
-  display: flex;
-  flex-direction: column;
-}
-
-.ranking {
-  margin-left: 25%;
-  list-style-type: none;
-}
-
 .user-ranking {
   display: block;
   padding-bottom: 0.5rem;
@@ -19,14 +9,28 @@
   padding-bottom: 0.625rem;
 }
 
-.ranking--header {
+.ranking-header {
   padding-bottom: 1.5rem;
 }
 
-.form-screen {
-  margin-bottom: 0.2rem;
+/** BUTTONS */
+.button {
+  max-width: 18.75rem;
+  width: 100%;
+  padding: .5rem;
+  border-radius: 2px;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
 }
 
-.form_header {
-  padding-bottom: 1.25rem;
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+/** INPUTS */
+.input-text {
+  margin-left: 2rem;
+  padding: .4rem;
 }

@@ -1,0 +1,26 @@
+/** H1 */
+.main-title {
+  font-size: 2rem;
+}
+
+@media all and (min-width: 670px) {
+  .main-title {
+    font-size: 3rem;
+  }
+}
+
+/** H2 */
+.secondary-title {
+  font-size: 1.5rem;
+}
+
+@media all and (min-width: 670px) {
+  .secondary-title {
+    font-size: 2rem;
+  }
+}
+
+.text-highlight {
+  font-size: 1.25rem;
+  font-weight: 500;
+}

@@ -1,42 +1,19 @@
+@import "layout.css";
 @import "grid-layout.css";
 @import "form.css";
+@import "typography.css";
+@import "utils.css";
 
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.container {
-  background-color: lightgrey;
-  display: flex;
-  justify-content: space-between;
-  padding: 5rem;
-}
-@media all and (max-width: 670px ) {
-  .container {
-    padding: 1rem;
-  }
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
-.main-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: white;
-  border-radius: 5px;
-  width: 70%;
-  box-shadow: 6px 6px 10px 0 darkgrey;
-}
-
-.aside-content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: white;
-  width: 25%;
-  border-radius: 5px;
-  box-shadow: 6px 6px 10px 0 darkgrey;
-  padding: 8rem 0;
+ul {
+  list-style-type: none;
 }

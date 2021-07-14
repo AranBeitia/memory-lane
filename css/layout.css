@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: .4rem;
+}
+@media all and (min-width: 812px ) {
+  .container {
+    padding: 4rem;
+  }
+}

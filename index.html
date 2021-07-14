@@ -10,6 +10,7 @@
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
     <script type="module" src="js/main.js" defer></script>
   </head>
@@ -22,15 +23,16 @@
       </p>
     <![endif]-->
     <div class="container">
-      <main class="main-content">
-
-        
-
-
+      <main id="main-content" class="card-background">
+        <section id="game-over" class="flex-center-column">
+          <h1 class="main-title">Congratulations, you won!!! &#128126 &#128175</h1>
+          <p class="padding-1">You won in <span class="text-highlight">15 seconds</span></p>
+          <button class="button">Play again</button>
+        </section>
       </main>
-      <aside class="aside-content">
-        <ul class="ranking">
-          <h2 class="ranking--header">User Scores</h2>
+      <aside class="card-background">
+        <h2 class="secondary-title ranking-header">User Scores</h2>
+        <ul class="padding-l1">
           <li class="ranking-elements">
             <span class="user-ranking">Haroon</span>
             <span class="score-ranking">25 seconds</span>

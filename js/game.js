@@ -1,4 +1,4 @@
-import { buildLayout } from './main.js'
+import { buildLayout, endHTML } from './main.js'
 
 function startGame() {
   setTimeout(hideAllImages, 3000)
@@ -7,7 +7,6 @@ function startGame() {
 
   document.querySelector('.grid').addEventListener('click', function (e) {
     let item = e.target.parentElement
-    console.log(item);
     if(item.classList.contains('flip-image-inner')) {
       counter ++
 
@@ -36,9 +35,16 @@ function validateCards () {
   if(image[0].alt === image[1].alt) {
     imageContainer[0].classList.replace('selected', 'matched')
     imageContainer[1].classList.replace('selected', 'matched')
-  } else if (image[0].alt !== image[1].alt) {
+  }
+
+  if (image[0].alt !== image[1].alt) {
     imageContainer[0].classList.remove('selected')
     imageContainer[1].classList.remove('selected')
+  }
+
+  // If all images are matched, the we won!
+  if (document.querySelectorAll('.flip-image-inner.matched').length === document.querySelectorAll('.flip-image-inner').length) {
+    buildLayout(endHTML);
   }
 }
 
