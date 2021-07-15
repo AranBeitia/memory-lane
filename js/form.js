@@ -7,7 +7,7 @@ import { startGame } from './game.js'
  document.addEventListener("DOMContentLoaded", function() {
   // Init userForm
   buildLayout(formHTML);
-  
+
   // Form on submit
   handlerForm();
 });
@@ -17,7 +17,7 @@ function handlerForm() {
   userForm.addEventListener('submit', e => {
       e.preventDefault();
       userName = document.querySelector('#uname').value;
-  
+
       if (/^[a-zA-Z]{1,8}$/.test(userName)) {
           // Game start
           buildLayout(galleryHTML());

@@ -36,7 +36,9 @@
 }
 /* Style the back side */
 .flip-image-back {
-  background-color: dodgerblue;
+  background-image: url('/assets/logo.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
   top: 0;
   width: 100%;

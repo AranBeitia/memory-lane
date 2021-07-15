@@ -6,7 +6,8 @@
 .current-time-score {
   font-size: 1rem;
   font-weight: 500;
-  color: blueviolet;
+  padding: .5rem 0;
+  color: crimson;
 }
 .current-player-container {
   margin-bottom: 15px;
