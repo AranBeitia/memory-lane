@@ -30,7 +30,7 @@ function updateRanking(userName, timeScore) {
     });
 
     // Limit array to 5 players
-    if (shuffledPlayers.length > 5) shuffledPlayers.pop(); 
+    if (shuffledPlayers.length > 3) shuffledPlayers.pop(); 
     
 
     shuffledPlayers.forEach(elm => {
