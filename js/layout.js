@@ -21,7 +21,7 @@ let endHTML = function (userName, timeScore) {
     <h1 class="main-title">Congrats ${userName}, you won!!! &#128126; &#128175;</h1>
     <p class="padding-2">Your score is <span class="text-highlight">${timeScore} seconds</span></p>
     <button id="playAgain" class="button">Play again</button>
-    <button id="newGame" class="[ button button-secondary ]">New Game</button>
+    <button id="newGame" class="margin-1y [ button button-secondary ]">New Game</button>
   </section>
 `;
 };
