@@ -7,7 +7,7 @@
 }
 
 /* To show the image */
-.flip-image-inner.selected ,
+.flip-image-inner.selected,
 .flip-image-inner.matched,
 .flip-image-inner.show {
   transform: rotateY(180deg);
@@ -44,4 +44,5 @@
   backface-visibility: hidden;
   border-radius: 5px;
   box-shadow: 1px 5px 7.5px 0 darkgrey;
+  opacity: 0.5;
 }
