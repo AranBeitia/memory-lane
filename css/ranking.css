@@ -10,7 +10,7 @@
   color: crimson;
 }
 .current-player-container {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
 }
