@@ -1,3 +1,4 @@
+@import "base.css";
 @import "layout.css";
 @import "grid-layout.css";
 @import "gallery.css";
@@ -5,16 +6,3 @@
 @import "typography.css";
 @import "utils.css";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-ul {
-  list-style-type: none;
-}

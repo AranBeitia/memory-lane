@@ -3,20 +3,20 @@ import { buildLayout, endHTML } from './main.js'
 function startGame() {
   setTimeout(hideAllImages, 3000)
 
-  let counter = 0
+  let visibleCards = 0
 
   document.querySelector('.grid').addEventListener('click', function (e) {
     let item = e.target.parentElement
     if(item.classList.contains('flip-image-inner')) {
-      counter ++
-
+      // Preventing clicking more than 2 elements
       if(document.querySelectorAll('.selected').length < 2) {
+        visibleCards ++
         item.classList.add('selected')
       }
-
-      if(counter === 2) {
+      // Preventing clicking more than 2 elements
+      if(visibleCards === 2) {
         setTimeout(validateCards, 750)
-        counter = 0
+        visibleCards = 0
       }
     }
   })
@@ -51,3 +51,4 @@ function validateCards () {
 export {
   startGame
 }
+
