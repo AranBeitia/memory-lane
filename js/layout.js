@@ -15,12 +15,13 @@ let formHTML = `
 </form>
 `;
 
-let endHTML = function (timeScore) {
+let endHTML = function (userName, timeScore) {
   return `
   <section id="game-over" class="flex-center-column">
-    <h1 class="main-title">Congrats, you won!!! &#128126; &#128175;</h1>
+    <h1 class="main-title">Congrats ${userName}, you won!!! &#128126; &#128175;</h1>
     <p class="padding-2">Your score is <span class="text-highlight">${timeScore} seconds</span></p>
     <button id="playAgain" class="button">Play again</button>
+    <button id="newGame" class="[ button button-secondary ]">New Game</button>
   </section>
 `;
 };

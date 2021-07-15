@@ -1,10 +1,15 @@
 import { buildLayout, endHTML, galleryHTML } from "./main.js";
 import { startCounter, stopandReturn, timeScore, counting } from "./timer.js";
+import { updateRanking } from "./ranking.js";
+import { userName, handlerForm } from "./form.js";
+import { formHTML } from "./layout.js";
 
 function startGame() {
+
+  document.querySelector("#current-name").innerHTML = userName;
+
   setTimeout(() => {
     hideAllImages();
-
     startCounter();
   }, 3000);
 
@@ -53,15 +58,30 @@ function validateCards() {
     document.querySelectorAll(".flip-image-inner").length
   ) {
     stopandReturn();
-    buildLayout(endHTML(timeScore));
-    let playAgain = document.getElementById("playAgain");
-    playAgain.addEventListener("click", newGame);
+    buildLayout(endHTML(userName, timeScore));
+
+    // Play Again
+    document.getElementById("playAgain").addEventListener("click", playAgain);
+    // New Game
+    document.getElementById("newGame").addEventListener('click', newGame)
+
+    // Reset current player name & score
+    document.querySelector("#current-name").innerHTML = '';
+    document.querySelector("#current-time-score").innerHTML = '';
+
+    // Update the ranking
+    updateRanking(userName, timeScore);
   }
 }
 
-function newGame() {
+function playAgain() {
   buildLayout(galleryHTML());
   startGame();
+}
+
+function newGame() {
+  buildLayout(formHTML);
+  handlerForm();
 }
 
 export { startGame, timeScore };

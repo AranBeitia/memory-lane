@@ -9,6 +9,10 @@ import { startGame } from './game.js'
   buildLayout(formHTML);
   
   // Form on submit
+  handlerForm();
+});
+
+function handlerForm() {
   let userForm = document.querySelector('#user-form');
   userForm.addEventListener('submit', e => {
       e.preventDefault();
@@ -23,8 +27,9 @@ import { startGame } from './game.js'
           alert('¿Enserio te llamas así?');
       }
   });
-});
+}
 
 export {
-  userName
+  userName,
+  handlerForm
 }

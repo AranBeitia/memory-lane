@@ -9,3 +9,9 @@
     padding: 5rem;
   }
 }
+
+@media all and (max-width: 600px) and (orientation: portrait) {
+  html {
+    transform: rotate(90deg);
+  }
+}

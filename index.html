@@ -27,29 +27,16 @@
     <div class="container [ grid grid-3-to-1 ]">
       <main id="main-content" class="card-background"></main>
       <aside class="card-background">
+        
         <h2 class="secondary-title ranking-header">User Scores</h2>
-        <ul class="padding-l1">
-          <li class="ranking-elements">
-            <span class="user-ranking">Haroon</span>
-            <span id="ms" class="score-ranking">25 seconds</span>
-          </li>
-          <li class="ranking-elements">
-            <span class="user-ranking">Arantza</span>
-            <span class="score-ranking">25 seconds</span>
-          </li>
-          <li class="ranking-elements">
-            <span class="user-ranking">Christian</span>
-            <span class="score-ranking">25 seconds</span>
-          </li>
-          <li class="ranking-elements">
-            <span class="user-ranking">Paul</span>
-            <span class="score-ranking">25 seconds</span>
-          </li>
-          <li class="ranking-elements">
-            <span class="user-ranking">Haroon</span>
-            <span class="score-ranking">25 seconds</span>
-          </li>
-        </ul>
+        
+        <div class="current-player-container">
+          <span id="current-name" class="current-name"></span>
+          <span id="current-time-score" class="current-time-score"></span>
+        </div>
+
+        <ol id="ranking" class="padding-l1">
+        </ol>
       </aside>
     </div>
   </body>

@@ -1,0 +1,10 @@
+.current-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.current-time-score {
+  font-size: 2rem;
+  font-weight: 500;
+  color: blueviolet;
+}

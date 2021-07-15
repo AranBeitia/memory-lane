@@ -1,3 +1,6 @@
+import { userName } from "./form.js";
+import { updateRanking } from "./ranking.js";
+
 let m = 0;
 let s = 0;
 let interval = "";
@@ -26,8 +29,10 @@ function counting() {
   } else {
     mAux = m;
   }
+
   timeScore = mAux + ":" + sAux;
-  document.getElementById("ms").innerHTML = mAux + ":" + sAux;
+
+  document.querySelector('#current-time-score').innerHTML = timeScore; 
 }
 
 function stopandReturn() {
