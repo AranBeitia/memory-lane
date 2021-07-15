@@ -4,6 +4,7 @@ import { startGame } from './game.js'
  * eventListeners
  */
  let userName = '';
+ let hardMode = false;
  document.addEventListener("DOMContentLoaded", function() {
   // Init userForm
   buildLayout(formHTML);
@@ -17,11 +18,12 @@ function handlerForm() {
   userForm.addEventListener('submit', e => {
       e.preventDefault();
       userName = document.querySelector('#uname').value;
+      hardMode = document.querySelector('#game-mode').checked;
 
       if (/^[a-zA-Z]{1,8}$/.test(userName)) {
           // Game start
           buildLayout(galleryHTML());
-          startGame()
+          startGame(hardMode)
       } else {
           // Show error msg
           alert('¿Enserio te llamas así?');
@@ -31,5 +33,6 @@ function handlerForm() {
 
 export {
   userName,
+  hardMode,
   handlerForm
 }
