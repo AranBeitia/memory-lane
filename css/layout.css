@@ -12,9 +12,9 @@
 
 @media all and (max-width: 600px) and (orientation: portrait) {
   html {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(90deg);
+    transform: translateX(0%) translateY(50%) rotate(90deg);
+  }
+  .main-content {
+    min-width: 100vw;
   }
 }
