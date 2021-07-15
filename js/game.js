@@ -5,7 +5,6 @@ import { userName, handlerForm, hardMode } from "./form.js";
 import { formHTML } from "./layout.js";
 
 function startGame() {
-
   document.querySelector("#current-name").innerHTML = userName;
 
   setTimeout(() => {
@@ -39,7 +38,6 @@ function hideAllImages() {
 }
 
 function validateCards() {
-
   let imageContainer = document.querySelectorAll(".selected");
   let image = document.querySelectorAll(".selected img");
 
@@ -49,11 +47,10 @@ function validateCards() {
   }
 
   if (image[0].alt !== image[1].alt) {
-
     if (hardMode) {
       let winner = false;
-      loadEndPage(winner)
-      return
+      loadEndPage(winner);
+      return;
     }
 
     imageContainer[0].classList.remove("selected");
@@ -66,26 +63,26 @@ function validateCards() {
     document.querySelectorAll(".flip-image-inner").length
   ) {
     let winner = true;
-    loadEndPage(winner)
+    loadEndPage(winner);
   }
 }
 
 function loadEndPage(winner) {
   // Stop the timer
   stopandReturn();
-  
+
   // Build the HTML
   buildLayout(endHTML(userName, timeScore, winner));
 
   // Play Again
   document.getElementById("playAgain").addEventListener("click", playAgain);
   // New Game
-  document.getElementById("newGame").addEventListener('click', newGame)
+  document.getElementById("newGame").addEventListener("click", newGame);
 
   // Reset current player name & score
-  document.querySelector("#current-name").innerHTML = '';
-  document.querySelector("#current-time-score").innerHTML = '';
-  
+  document.querySelector("#current-name").innerHTML = "";
+  document.querySelector("#current-time-score").innerHTML = "";
+
   if (winner) {
     // Update the ranking
     updateRanking(userName, timeScore);

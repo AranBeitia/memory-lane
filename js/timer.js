@@ -32,7 +32,7 @@ function counting() {
 
   timeScore = mAux + ":" + sAux;
 
-  document.querySelector('#current-time-score').innerHTML = timeScore; 
+  document.querySelector("#current-time-score").innerHTML = timeScore;
 }
 
 function stopandReturn() {

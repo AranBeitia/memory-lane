@@ -22,14 +22,13 @@ let formHTML = `
 `;
 
 let endHTML = function (userName, timeScore, winner) {
-
-  let title = 'Congrats ' + userName +', you won!!! &#128126\; &#128175\;';
+  let title = "Congrats " + userName + ", you won!!! &#128126; &#128175;";
   let subTitle = `Your score is <span class="text-highlight">${timeScore} seconds</span>`;
 
   if (winner === false) {
-    title = 'Sorry you are a looser &#128128\;';
-    timeScore = '';
-    subTitle = 'Try again!';
+    title = "Sorry you are a looser &#128128;";
+    timeScore = "";
+    subTitle = "Try again!";
   }
 
   return `
