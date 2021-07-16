@@ -36,8 +36,8 @@
 }
 /* Style the back side */
 .flip-image-back {
-  background-image: url('../assets/logo.jpg');
   background-color: rgb(75, 35, 168);
+  background-image: url('../assets/logo.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;

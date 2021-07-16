@@ -1,11 +1,10 @@
 import { buildLayout, endHTML, galleryHTML } from "./main.js";
 import { startCounter, stopandReturn, timeScore, counting } from "./timer.js";
 import { updateRanking } from "./ranking.js";
-import { userName, handlerForm } from "./form.js";
+import { userName, handlerForm, hardMode } from "./form.js";
 import { formHTML } from "./layout.js";
 
 function startGame() {
-
   document.querySelector("#current-name").innerHTML = userName;
 
   setTimeout(() => {
@@ -48,6 +47,12 @@ function validateCards() {
   }
 
   if (image[0].alt !== image[1].alt) {
+    if (hardMode) {
+      let winner = false;
+      loadEndPage(winner);
+      return;
+    }
+
     imageContainer[0].classList.remove("selected");
     imageContainer[1].classList.remove("selected");
   }
@@ -57,18 +62,28 @@ function validateCards() {
     document.querySelectorAll(".flip-image-inner.matched").length ===
     document.querySelectorAll(".flip-image-inner").length
   ) {
-    stopandReturn();
-    buildLayout(endHTML(userName, timeScore));
+    let winner = true;
+    loadEndPage(winner);
+  }
+}
 
-    // Play Again
-    document.getElementById("playAgain").addEventListener("click", playAgain);
-    // New Game
-    document.getElementById("newGame").addEventListener('click', newGame)
+function loadEndPage(winner) {
+  // Stop the timer
+  stopandReturn();
 
-    // Reset current player name & score
-    document.querySelector("#current-name").innerHTML = '';
-    document.querySelector("#current-time-score").innerHTML = '';
+  // Build the HTML
+  buildLayout(endHTML(userName, timeScore, winner));
 
+  // Play Again
+  document.getElementById("playAgain").addEventListener("click", playAgain);
+  // New Game
+  document.getElementById("newGame").addEventListener("click", newGame);
+
+  // Reset current player name & score
+  document.querySelector("#current-name").innerHTML = "";
+  document.querySelector("#current-time-score").innerHTML = "";
+
+  if (winner) {
     // Update the ranking
     updateRanking(userName, timeScore);
   }
